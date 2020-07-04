@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import Hearder from "./components/Display/Header"
 import CharacterGrid from "./components/Display/characters/CharacterGrid"
+import Search from "./components/Display/search"
 
 import './App.css';
 
@@ -21,6 +22,7 @@ const  App = () => {
   return (
     <div className="container">
       <Hearder />
+      <Search />
       <CharacterGrid isLoading={isLoading} items={items}/>
     </div>
   );
